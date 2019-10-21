@@ -23,9 +23,7 @@ class SocialProfiles extends Component {
     return (
       <div>
         {SOCIAL_PROFILES.map(profile => {
-          return (
-            <SocialProfile key={SOCIAL_PROFILES.id} socialProfile={profile} />
-          );
+          return <SocialProfile key={profile.id} socialProfile={profile} />;
         })}
       </div>
     );
